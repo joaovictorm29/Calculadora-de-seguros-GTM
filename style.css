@@ -249,3 +249,37 @@ button:hover{
     }
 
 }
+
+body{
+
+    min-height:100vh;
+    position:relative;
+    padding-bottom:56px;
+}
+
+footer{
+
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    text-align:center;
+    padding:14px 30px;
+    color:#475569;
+    font-size:14px;
+    background:rgba(255,255,255,0.95);
+    border-top:1px solid #e2e8f0;
+    z-index:10;
+}
+
+footer a{
+
+    color:#0f7597;
+    text-decoration:none;
+    font-weight:700;
+}
+
+footer a:hover{
+
+    text-decoration:underline;
+}
