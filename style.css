@@ -228,6 +228,18 @@ button:hover{
 
 }
 
+.status-text{
+
+    display:block;
+
+    margin-top:14px;
+
+    font-weight:600;
+
+    color:var(--dark);
+
+}
+
 @media(max-width:900px){
 
     main{
