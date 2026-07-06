@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora de Renovação</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-brand">
+            <img class="logo-placeholder" src="assets/Logo GTM Engenharia.avif" alt="Logo GTM Engenharia">
+
+            <div class="header-text">
+                <h1>Calculadora de Renovação</h1>
+                <p>Compare propostas de seguro de forma rápida.</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="card">
+
+            <h2>Dados da Proposta</h2>
+
+            <div class="input-group">
+                <label>Proposta Antiga</label>
+                <input type="number" id="oldValue">
+            </div>
+
+            <div class="input-group">
+                <label>Proposta Nova</label>
+                <input type="number" id="newValue">
+            </div>
+
+            <div class="input-group">
+                <label>ICMS</label>
+                <input type="number" id="icms">
+            </div>
+
+            <div class="checkbox">
+
+                <input type="checkbox" id="hasIcms">
+
+                <label for="hasIcms">
+                    Possui ICMS
+                </label>
+
+            </div>
+
+            <div class="buttons">
+
+                <button id="calculateBtn">
+                    Calcular
+                </button>
+
+                <button class="secondary">
+                    Limpar
+                </button>
+
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <h2>Resultado</h2>
+
+            <div class="result-item">
+
+                <span>Valor Antigo</span>
+
+                <strong id="oldResult">
+                    R$ 0,00
+                </strong>
+
+            </div>
+
+            <div class="result-item">
+
+                <span>Valor Novo</span>
+
+                <strong id="newResult">
+                    R$ 0,00
+                </strong>
+
+            </div>
+
+            <div class="result-item">
+
+                <span>Diferença</span>
+
+                <strong id="difference">
+                    R$ 0,00
+                </strong>
+
+            </div>
+
+            <div class="result-item">
+
+                <span>Variação</span>
+
+                <strong id="percent">
+                    0%
+                </strong>
+
+            </div>
+
+            <div class="progress">
+
+                <div id="bar"></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
