@@ -127,6 +127,129 @@
             <span id="statusText" class="status-text">Sem variação</span>
 
         </section>
+        <section class="card">
+
+    <h2>À Vista ou Parcelado?</h2>
+
+    <div class="input-group">
+        <label>Valor à vista</label>
+        <input
+            type="number"
+            id="cashPrice"
+            placeholder="R$ 0,00">
+    </div>
+
+    <div class="input-group">
+        <label>Valor parcelado</label>
+        <input
+            type="number"
+            id="installmentPrice"
+            placeholder="R$ 0,00">
+    </div>
+
+    <div class="input-group">
+        <label>Quantidade de parcelas</label>
+        <input
+            type="number"
+            id="installments"
+            placeholder="Ex: 10">
+    </div>
+
+    <div class="input-group">
+        <label>Rendimento mensal (%)</label>
+        <input
+            type="number"
+            id="monthlyRate"
+            placeholder="Ex: 1">
+    </div>
+
+    <div class="buttons">
+
+        <button id="financeBtn">
+            Calcular
+        </button>
+
+        <button
+            id="financeClearBtn"
+            class="secondary"
+            type="button">
+
+            Limpar
+
+        </button>
+
+    </div>
+
+</section>
+
+<section class="card">
+
+    <h2>Resultado Financeiro</h2>
+
+    <div class="result-item">
+
+        <span>Economia à vista</span>
+
+        <strong id="savingResult">
+
+            R$ 0,00
+
+        </strong>
+
+    </div>
+
+    <div class="result-item">
+
+        <span>Rendimento do investimento</span>
+
+        <strong id="investmentResult">
+
+            R$ 0,00
+
+        </strong>
+
+    </div>
+
+    <div class="result-item">
+
+        <span>Diferença</span>
+
+        <strong id="financeDifference">
+
+            R$ 0,00
+
+        </strong>
+
+    </div>
+
+    <div class="result-item">
+
+        <span>Melhor opção</span>
+
+        <strong id="bestOption">
+
+            -
+
+        </strong>
+
+    </div>
+
+    <div class="progress">
+
+        <div id="financeBar"></div>
+
+    </div>
+
+    <span
+        class="status-text"
+        id="financeStatus">
+
+        Aguardando cálculo.
+
+    </span>
+
+</section>
+
     </main>
 
     <footer>
