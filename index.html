@@ -37,17 +37,17 @@
 
             <div class="input-group">
                 <label>Proposta Antiga</label>
-                <input type="number" id="oldValue">
+                <input type="text" id="oldValue" inputmode="decimal" pattern="[0-9]*" placeholder="R$ 0,00">
             </div>
 
             <div class="input-group">
                 <label>Proposta Nova</label>
-                <input type="number" id="newValue">
+                <input type="text" id="newValue" inputmode="decimal" pattern="[0-9]*" placeholder="R$ 0,00">
             </div>
 
             <div class="input-group">
                 <label>ICMS</label>
-                <input type="number" id="icms">
+                <input type="text" id="icms" inputmode="decimal" pattern="[0-9]*" placeholder="R$ 0,00">
             </div>
 
             <div class="checkbox">
@@ -134,16 +134,20 @@
     <div class="input-group">
         <label>Valor à vista</label>
         <input
-            type="number"
+            type="text"
             id="cashPrice"
+            inputmode="decimal"
+            pattern="[0-9]*"    
             placeholder="R$ 0,00">
     </div>
 
     <div class="input-group">
         <label>Valor parcelado</label>
         <input
-            type="number"
+            type="text"
             id="installmentPrice"
+            inputmode="decimal"
+            pattern="[0-9]*"    
             placeholder="R$ 0,00">
     </div>
 
@@ -151,6 +155,7 @@
         <label>Quantidade de parcelas</label>
         <input
             type="number"
+            inputmode="numeric"
             id="installments"
             placeholder="Ex: 10">
     </div>
@@ -159,6 +164,7 @@
         <label>Rendimento mensal (%)</label>
         <input
             type="number"
+            inputmode="decimal"
             id="monthlyRate"
             placeholder="Ex: 1">
     </div>

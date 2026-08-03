@@ -209,3 +209,31 @@ function resetFinanceForm() {
     financeBar.style.width = "0%";
     financeBar.style.backgroundColor = "var(--primary)";
 }
+
+//função para normalizar os numeros com vírgula e ponto.
+function normalizeNumberString(value) {
+    const trimmed = String(value).trim();
+    if (trimmed === "") return "";
+    if (trimmed.includes(",") && trimmed.includes(".")) {
+        return trimmed.replace(/\./g, "").replace(",", ".");
+    }
+    return trimmed.replace(",", ".");
+}
+
+function parseNumberInput(value) {
+    const normalized = normalizeNumberString(value);
+    return normalized === "" ? NaN : parseFloat(normalized);
+}
+
+function parseIntegerInput(value) {
+    const normalized = normalizeNumberString(value);
+    const parsed = parseFloat(normalized);
+    return Number.isInteger(parsed) ? parsed : NaN;
+}
+
+function formatCurrency(value) {
+    return value.toLocaleString("pt-BR", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2,
+    });
+}
